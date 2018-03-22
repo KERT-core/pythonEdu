@@ -8,9 +8,11 @@ Given  _n_  non-negative integers  _a1_,  _a2_, ...,  _an_, where each represent
 Note: You may not slant the container and  _n_  is at least 2.
 ## **Example**
 ```
-Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
-Output: 7 -> 0 -> 8
-Explanation: 342 + 465 = 807.
+Input: [4, 10]
+Output: 4
+
+Input: [25, 15, 18]
+Output: 36
 ```
 
 ## ***Warning***
