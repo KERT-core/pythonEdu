@@ -11,6 +11,8 @@ Even though this algorithm is designed for cryptographic message authentication 
 
 So, I'm asking you to build MD5 encrypter using python. [Visit this site](https://docs.python.org/3/library/hashlib.html) to learn about module that you have to use
 
+However, in this question please use
+sha224 algorithm when you are solving
 
 
 ## **Example**
