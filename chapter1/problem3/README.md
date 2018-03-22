@@ -1,8 +1,8 @@
-# Python Programming Problem Set #2
+# Python Programming Problem Set #3
 
 ## **Premise**
 
- - Implement ***pow(x,n)***
+ - Implement ***pow(x,n)*** 
 
 ## **Example**
 ```

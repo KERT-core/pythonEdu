@@ -1,1 +1,66 @@
-Hasn't updated yet but will be updated it as soon as i have time to updateW
+# Python Programming Problem Set #1
+
+## **Premise**
+'?' Matches any single character.
+'*' Matches any sequence of characters (including the empty sequence).
+
+The matching should cover the entire input string (not partial).
+The function prototype should be :
+bool isMatch(const char *s, const char *p) for c
+for python isMatch(self, s, p)
+
+## **Example**
+```
+isMatch("aa","a") → false
+isMatch("aa","aa") → true
+isMatch("aaa","aa") → false
+isMatch("aa", "*") → true
+isMatch("aa", "a*") → true
+isMatch("ab", "?*") → true
+isMatch("aab", "c\*a\*b") → false
+```
+
+## ***Warning***
+I made a program that evaluates your code by linter and pytest. So you need to follow some structure in coding.
+
+ - Your program should be saved as ***solutions***
+ - Create function call ***solution*** which returns the solution
+ - When you want to run your program, run my test.py to check wether your code is going through well with my test cases.
+
+*For example;*
+```
+L solutions.py
+L test.py
+LrestGetLib.py
+```
+
+ - test.py will be given to you for each problem set, so just copy and  
+   paste the file in to your directory.  
+ - solutions.py is the one that you need to create
+ - restGetLib.py will be given to you for some problems like this which requires online authentication
+
+Inside the solutions.py
+```
+def solution(x, y): #depends on the input you may change it
+	'''
+	Your code goes in here
+	'''
+
+	return (answer)
+
+if __name__ == "__main__":
+	'''
+	Your own test case if you want to test it yourself
+	'''
+```   
+How to run?
+```
+On your terminal or command prompt
+----------------------------------
+~# python test.py
+```
+Than it will prompt you with
+```
+========================== 4 passed in 0.03 seconds ===========================
+```
+If something similar pops up you are correct, else there is a problem with the codes or contact me or post an issue
