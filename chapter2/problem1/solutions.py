@@ -1,21 +1,26 @@
-def isMatch(s, p):
-    p_ptr, s_ptr, last_s_ptr, last_p_ptr = 0, 0, -1, -1
-    while s_ptr < len(s):
-        if p_ptr < len(p) and (s[s_ptr] == p[p_ptr] or p[p_ptr] == '?'):
-            s_ptr += 1
-            p_ptr += 1
-        elif p_ptr < len(p) and p[p_ptr] == '*':
-            p_ptr += 1
-            last_s_ptr = s_ptr
-            last_p_ptr = p_ptr
-        elif last_p_ptr != -1:
-            last_s_ptr += 1
-            s_ptr = last_s_ptr
-            p_ptr = last_p_ptr
+import re
+def isMatch(word, pattern):
+
+
+    str = "hej"
+    test_list = [print(x) for x in str]
+
+
+
+    temp_word = list(word)
+    temp_pattern = list(pattern)
+    for x in range(0,len(pattern)):
+        if pattern == '?':
+            continue
+        elif pattern[x] != '*':
+            if pattern[x] != word[x]:
+                return False
         else:
-            return False
-            
-    while p_ptr < len(p) and p[p_ptr] == '*':
-        p_ptr += 1
-        
-    return p_ptr == len(p)
+
+            print(1)
+
+
+
+if __name__ == "__main__":
+    #print(isMatch('aa', 'aa'))
+    print(re.search("aa","$**^"))
